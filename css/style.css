@@ -267,6 +267,30 @@ header nav ul li a {
   height: 32px;
   line-height: 20px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#diamondsearch .results_table .sort span i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#diamondsearch .results_table .sort.asc span i {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#diamondsearch .results_table .sort.dsc span i {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 #diamondsearch .results_table .sort span {
@@ -325,4 +349,41 @@ header nav ul li a {
 
 #diamondsearch .results_table tbody tr:hover td {
   color: #ffffff;
+}
+
+#diamondsearch .search_fotter {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0 28px;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#diamondsearch .search_fotter .pg_nav .pagination li a {
+  display: inline-block;
+  color: #3a3a3a;
+  font-size: 14px;
+  text-align: center;
+  min-width: 28px;
+  padding: 0 4px;
+  height: 28px;
+  line-height: 28px;
+}
+
+#diamondsearch .search_fotter .pg_nav .pagination li.active a {
+  background-color: #f5f5f5;
+}
+
+#diamondsearch .search_fotter .pg_nav .pgBtn i {
+  display: inline-block;
+  color: #3a3a3a;
+  font-size: 14px;
+  text-align: center;
+  min-width: 28px;
+  padding: 0 4px;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
 }

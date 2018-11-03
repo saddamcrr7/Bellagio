@@ -185,6 +185,19 @@ header {
       height: 32px;
       line-height: 20px;
       cursor: pointer;
+      user-select: none;
+
+      span i {
+        transition: transform 0.3s;
+      }
+
+      &.asc span i {
+        transform: rotate(180deg);
+      }
+
+      &.dsc span i {
+        transform: rotate(0deg);
+      }
 
       span {
         font-weight: 500;
@@ -238,6 +251,49 @@ header {
           td {
             color: $white-color;
           }
+        }
+      }
+    }
+  }
+
+  .search_fotter {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 28px;
+    width: 100%;
+    height: 40px;
+    background-color: $white-color;
+    overflow: hidden;
+
+    .pg_nav {
+      .pagination {
+        li {
+          a {
+            display: inline-block;
+            color: #3a3a3a;
+            font-size: 14px;
+            text-align: center;
+            min-width: 28px;
+            padding: 0 4px;
+            height: 28px;
+            line-height: 28px;
+          }
+          &.active a{
+            background-color: $grey-color;
+          }
+        }
+      }
+      .pgBtn{
+        i{
+          display: inline-block;
+          color: #3a3a3a;
+          font-size: 14px;
+          text-align: center;
+          min-width: 28px;
+          padding: 0 4px;
+          height: 28px;
+          line-height: 28px;
+          cursor: pointer;
         }
       }
     }
