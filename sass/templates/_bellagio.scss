@@ -1,0 +1,169 @@
+header {
+  .header_top {
+    background: $primary-color;
+    padding: 10px 0px;
+
+    @include breakpoint($small) {
+      padding: 15px 5px;
+
+    }
+
+    ul li {
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 12px;
+
+      a {
+        color: $white-color;
+        transition: opacity 0.3s;
+        padding: 5px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .top_left li:first-child {
+      border-right: 1.2px solid $white-color;
+    }
+
+    .top_Right li:nth-child(1),
+    .top_Right li:nth-child(2),
+    .top_Right li:nth-child(3) {
+      border-right: 1.2px solid $white-color;
+    }
+  }
+
+  .header_bottom {
+    background: $primary-color;
+    padding: 10px;
+    color: $white-color;
+
+    p {
+      width: 100%;
+      letter-spacing: 1px;
+    }
+
+    form {
+      width: 100%;
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 2px 20px 2px 10px;
+        border: none;
+      }
+
+      button {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+        outline: none;
+        color: $dark-grey-color;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    @include breakpoint($large) {
+      p {
+        width: 70%;
+      }
+
+      form {
+        width: 30%;
+      }
+    }
+
+  }
+
+  nav {
+    padding: 10px 0;
+
+    ul {
+      li {
+        a {
+          color: #163868;
+          font-size: 11px;
+          transition: all 0.3s;
+
+          @include breakpoint($small) {
+            font-size: 12px;
+          }
+
+          @include breakpoint($medium) {
+            font-size: 14px;
+          }
+
+          @include breakpoint($large) {
+            font-size: 15px;
+          }
+
+          @include breakpoint($x-large) {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+#diamondsearch {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  line-height: 1;
+  margin: 0 0 36px;
+  min-height: 827px;
+  position: relative;
+
+  .search-title {
+    height: 60px;
+
+    h1 {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+      width: 90%;
+      height: inherit;
+      line-height: 60px;
+      padding: 0 0 0 24px;
+      color: #2c2c2c;
+      border-bottom: 1px solid #dfdfdf;
+
+      span {
+        font-weight: 400;
+        margin-left: 4px;
+      }
+    }
+
+    #filterSlideToggleBtn {
+      width: 10%;
+      width: 162px;
+      border-left: 1px solid #dfdfdf;
+      text-align: center;
+      letter-spacing: 1px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #2c2c2c;
+      font-weight: 500;
+      i {
+        margin-left: 12px;
+        font-size: 20px;
+        color: $primary-color;
+      }
+    }
+  }
+}
