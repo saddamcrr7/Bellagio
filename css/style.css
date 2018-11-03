@@ -295,7 +295,7 @@ header nav ul li a {
   border: 0 none;
 }
 
-#diamondsearch .results_table tbody {
+#diamondsearch .results_table tbody tr {
   cursor: default;
   -webkit-transition: background-color .25s;
   -o-transition: background-color .25s;
@@ -303,7 +303,7 @@ header nav ul li a {
 }
 
 #diamondsearch .results_table tbody tr:nth-child(2n) {
-  background: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 #diamondsearch .results_table tbody tr td {
@@ -317,4 +317,12 @@ header nav ul li a {
   -webkit-transition: color .25s;
   -o-transition: color .25s;
   transition: color .25s;
+}
+
+#diamondsearch .results_table tbody tr:hover {
+  background-color: #1f4c8c;
+}
+
+#diamondsearch .results_table tbody tr:hover td {
+  color: #ffffff;
 }

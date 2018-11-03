@@ -83,7 +83,7 @@
           <tr>
 
             <th>
-              <div class="sort" data-sort="all">
+              <div class="sort" data-sort="shape">
                 <span>SHAPE<i class="ml-2 fas fa-angle-up"></i></span>
                 <div class="attributes">ALL</div>
               </div>
@@ -93,6 +93,12 @@
               <div class="sort" data-sort="carat">
                 <span>CARAT<i class="ml-2 fas fa-angle-up"></i></span>
                 <div class="attributes">0.00 - 30.00</div>
+              </div>
+            </th>
+            <th>
+              <div class="sort" data-sort="color">
+                <span>COLOR<i class="ml-2 fas fa-angle-up"></i></span>
+                <div class="attributes">D - M</div>
               </div>
             </th>
 
@@ -142,246 +148,271 @@
 
           </tr>
         </thead>
-        <tbody>
+
+        <tbody class="list">
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>M</td>
-            <td>IF</td>
-            <td>Excellent</td>
-            <td>Fair</td>
-            <td>GIA</td>
-            <td>$1,028,765.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">M</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Excellent</td>
+            <td class="polish">Fair</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$1,028,765.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>H</td>
-            <td>IF</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Round</td>
+            <td class="carat">11.42</td>
+            <td class="color">H</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Good</td>
+            <td class="polish">Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>D</td>
-            <td>VS2</td>
-            <td></td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$170.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">D</td>
+            <td class="clarity">VS2</td>
+            <td class="cut"></td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$170.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>I</td>
-            <td>I1</td>
-            <td>Good</td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Round</td>
+            <td class="carat">11.42</td>
+            <td class="color">I</td>
+            <td class="clarity">I1</td>
+            <td class="cut">Good</td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>M</td>
-            <td>IF</td>
-            <td>Excellent</td>
-            <td>Fair</td>
-            <td>GIA</td>
-            <td>$1,028,765.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">M</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Excellent</td>
+            <td class="polish">Fair</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$1,028,765.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>H</td>
-            <td>IF</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Round</td>
+            <td class="carat">11.42</td>
+            <td class="color">H</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Good</td>
+            <td class="polish">Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>D</td>
-            <td>VS2</td>
-            <td></td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$170.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">D</td>
+            <td class="clarity">VS2</td>
+            <td class="cut"></td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$170.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>I</td>
-            <td>I1</td>
-            <td>Good</td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Round</td>
+            <td class="carat">11.42</td>
+            <td class="color">I</td>
+            <td class="clarity">I1</td>
+            <td class="cut">Good</td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>M</td>
-            <td>IF</td>
-            <td>Excellent</td>
-            <td>Fair</td>
-            <td>GIA</td>
-            <td>$1,028,765.00</td>
+            <td class="shape">Asscher</td>
+            <td class="carat">11.42</td>
+            <td class="color">M</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Excellent</td>
+            <td class="polish">Fair</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$1,028,765.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>H</td>
-            <td>IF</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Asscher</td>
+            <td class="carat">11.42</td>
+            <td class="color">H</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Good</td>
+            <td class="polish">Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>D</td>
-            <td>VS2</td>
-            <td></td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$170.00</td>
+            <td class="shape">Asscher</td>
+            <td class="carat">11.42</td>
+            <td class="color">D</td>
+            <td class="clarity">VS2</td>
+            <td class="cut"></td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$170.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>I</td>
-            <td>I1</td>
-            <td>Good</td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">I</td>
+            <td class="clarity">I1</td>
+            <td class="cut">Good</td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>M</td>
-            <td>IF</td>
-            <td>Excellent</td>
-            <td>Fair</td>
-            <td>GIA</td>
-            <td>$1,028,765.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">M</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Excellent</td>
+            <td class="polish">Fair</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$1,028,765.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>H</td>
-            <td>IF</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Asscher</td>
+            <td class="carat">11.42</td>
+            <td class="color">H</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Good</td>
+            <td class="polish">Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>D</td>
-            <td>VS2</td>
-            <td></td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$170.00</td>
+            <td class="shape">Asscher</td>
+            <td class="carat">11.42</td>
+            <td class="color">D</td>
+            <td class="clarity">VS2</td>
+            <td class="cut"></td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$170.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>I</td>
-            <td>I1</td>
-            <td>Good</td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Asscher</td>
+            <td class="carat">11.42</td>
+            <td class="color">I</td>
+            <td class="clarity">I1</td>
+            <td class="cut">Good</td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>M</td>
-            <td>IF</td>
-            <td>Excellent</td>
-            <td>Fair</td>
-            <td>GIA</td>
-            <td>$1,028,765.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">M</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Excellent</td>
+            <td class="polish">Fair</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$1,028,765.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>H</td>
-            <td>IF</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Cushion Modified	</td>
+            <td class="carat">11.42</td>
+            <td class="color">H</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Good</td>
+            <td class="polish">Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>D</td>
-            <td>VS2</td>
-            <td></td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$170.00</td>
+            <td class="shape">Cushion Modified	</td>
+            <td class="carat">11.42</td>
+            <td class="color">D</td>
+            <td class="clarity">VS2</td>
+            <td class="cut"></td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$170.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>I</td>
-            <td>I1</td>
-            <td>Good</td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Pear</td>
+            <td class="carat">11.42</td>
+            <td class="color">I</td>
+            <td class="clarity">I1</td>
+            <td class="cut">Good</td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>M</td>
-            <td>IF</td>
-            <td>Excellent</td>
-            <td>Fair</td>
-            <td>GIA</td>
-            <td>$1,028,765.00</td>
+            <td class="shape">Cushion Modified	</td>
+            <td class="carat">11.42</td>
+            <td class="color">M</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Excellent</td>
+            <td class="polish">Fair</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$1,028,765.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>H</td>
-            <td>IF</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Cushion Modified	</td>
+            <td class="carat">11.42</td>
+            <td class="color">H</td>
+            <td class="clarity">IF</td>
+            <td class="cut">Good</td>
+            <td class="polish">Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>D</td>
-            <td>VS2</td>
-            <td></td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$170.00</td>
+            <td class="shape">Cushion Modified	</td>
+            <td class="carat">11.42</td>
+            <td class="color">D</td>
+            <td class="clarity">VS2</td>
+            <td class="cut"></td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$170.00</td>
           </tr>
           <tr>
-            <td>Pear</td>
-            <td>11.42</td>
-            <td>I</td>
-            <td>I1</td>
-            <td>Good</td>
-            <td>Very Good</td>
-            <td>GIA</td>
-            <td>$161.00</td>
+            <td class="shape">Cushion Modified	</td>
+            <td class="carat">11.42</td>
+            <td class="color">I</td>
+            <td class="clarity">I1</td>
+            <td class="cut">Good</td>
+            <td class="polish">Very Good</td>
+            <td class="symmetry">Good</td>
+            <td class="lab">GIA</td>
+            <td class="price">$161.00</td>
           </tr>
         </tbody>
       </table>

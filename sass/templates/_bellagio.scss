@@ -212,13 +212,15 @@ header {
     }
 
     tbody {
-      cursor: default;
-      transition: background-color .25s;
 
       tr {
-        &:nth-child(2n){
-          background: $grey-color;
+        cursor: default;
+        transition: background-color .25s;
+
+        &:nth-child(2n) {
+          background-color: $grey-color;
         }
+
         td {
           text-align: center;
           height: 40px;
@@ -227,8 +229,15 @@ header {
           font-size: 14px;
           vertical-align: middle;
           color: #3a3a3a;
-          -webkit-transition: color .25s;
           transition: color .25s;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+
+          td {
+            color: $white-color;
+          }
         }
       }
     }
