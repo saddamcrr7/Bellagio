@@ -248,3 +248,49 @@ header nav ul li a {
   font-size: 20px;
   color: #1f4c8c;
 }
+
+#diamondsearch .results_table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  position: relative;
+}
+
+#diamondsearch .results_table .sort {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  color: #2c2c2c;
+  text-align: center;
+  border-left: 1px solid #dfdfdf;
+  margin: 12px 0;
+  height: 32px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+#diamondsearch .results_table .sort span {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#diamondsearch .results_table .sort .attributes {
+  color: #818181;
+  line-height: 1;
+}
+
+#diamondsearch .results_table thead {
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#diamondsearch .results_table thead th:first-child .sort {
+  border: 0 none;
+}
