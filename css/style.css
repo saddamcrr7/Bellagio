@@ -294,3 +294,27 @@ header nav ul li a {
 #diamondsearch .results_table thead th:first-child .sort {
   border: 0 none;
 }
+
+#diamondsearch .results_table tbody {
+  cursor: default;
+  -webkit-transition: background-color .25s;
+  -o-transition: background-color .25s;
+  transition: background-color .25s;
+}
+
+#diamondsearch .results_table tbody tr:nth-child(2n) {
+  background: #f5f5f5;
+}
+
+#diamondsearch .results_table tbody tr td {
+  text-align: center;
+  height: 40px;
+  width: 11.1111%;
+  font-family: 'proxima_novaregular', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #3a3a3a;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
