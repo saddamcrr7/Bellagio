@@ -225,7 +225,6 @@ header {
     }
 
     tbody {
-
       tr {
         cursor: default;
         transition: background-color .25s;
@@ -278,23 +277,35 @@ header {
             height: 28px;
             line-height: 28px;
           }
-          &.active a{
+
+          &.active a {
             background-color: $grey-color;
           }
         }
       }
-      .pgBtn{
-        i{
-          display: inline-block;
-          color: #3a3a3a;
-          font-size: 14px;
-          text-align: center;
-          min-width: 28px;
-          padding: 0 4px;
-          height: 28px;
-          line-height: 28px;
-          cursor: pointer;
-        }
+
+      .pgBtn {
+        display: inline-block;
+        color: #3a3a3a;
+        font-size: 14px;
+        text-align: center;
+        min-width: 28px;
+        padding: 0 4px;
+        height: 28px;
+        line-height: 28px;
+        cursor: pointer;
+        user-select: none;
+
+      }
+
+      .disabled{
+        opacity: 0.5;
+      }
+
+      .jPaginateNext i,
+      .jPaginatePrev i {
+        font-size: 20px;
+        line-height: 28px;
       }
     }
   }

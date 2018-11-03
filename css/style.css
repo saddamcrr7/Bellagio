@@ -376,7 +376,7 @@ header nav ul li a {
   background-color: #f5f5f5;
 }
 
-#diamondsearch .search_fotter .pg_nav .pgBtn i {
+#diamondsearch .search_fotter .pg_nav .pgBtn {
   display: inline-block;
   color: #3a3a3a;
   font-size: 14px;
@@ -386,4 +386,18 @@ header nav ul li a {
   height: 28px;
   line-height: 28px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#diamondsearch .search_fotter .pg_nav .disabled {
+  opacity: 0.5;
+}
+
+#diamondsearch .search_fotter .pg_nav .jPaginateNext i,
+#diamondsearch .search_fotter .pg_nav .jPaginatePrev i {
+  font-size: 20px;
+  line-height: 28px;
 }
