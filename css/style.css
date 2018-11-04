@@ -206,6 +206,7 @@ header nav ul li a {
   margin: 0 0 36px;
   min-height: 827px;
   position: relative;
+  padding-bottom: 40px;
 }
 
 #diamondsearch .search-title {
@@ -359,6 +360,8 @@ header nav ul li a {
   height: 40px;
   background-color: #ffffff;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
 }
 
 #diamondsearch .search_fotter .pg_nav .pagination li a {

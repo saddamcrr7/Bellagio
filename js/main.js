@@ -1,6 +1,6 @@
 var options = {
   valueNames: ['shape', 'carat', 'color', 'clarity', 'cut', 'polish', 'symmetry', 'lab', 'price'],
-  page: 17,
+  page: 20,
   pagination: {
     innerWindow: 1,
     left: 0,
@@ -12,8 +12,8 @@ var options = {
 var resultList = new List('diamondsearch', options);
 
 
-function checkPagerPosition() {
 
+function checkPagerPosition() {
   if ($('.pagination li:first').hasClass('active')) {
     $('.jPaginatePrev, .jPaginateFirst').addClass('disabled');
   } else if ($('.pagination li').length === 1) {
@@ -26,44 +26,53 @@ function checkPagerPosition() {
   } else {
     $('.jPaginateNext, .jPaginateLast').removeClass('disabled');
   }
-
 }
 
 
 
 $('.jPaginateFirst').on('click', function () {
-  resultList.show(1, 17);
+  resultList.show(1, 20);
   checkPagerPosition();
 })
 
+
 $('.jPaginateLast').on('click', function () {
   var total = resultList.size(),
-    page = (total % 17) || 17,
+
+    page = (total % 20) || 20,
     start = total - page + 1;
-  resultList.show(start, 17);
+  resultList.show(start, 20);
+
   checkPagerPosition();
 })
 
 
 $('.jPaginateNext').on('click', function () {
   var list = $('.pagination').find('li');
+
   $.each(list, function (position, element) {
     if ($(element).is('.active')) {
       $(list[position + 1]).trigger('click');
+      checkPagerPosition();
+
     }
   })
-  checkPagerPosition();
+
 });
 
 
 $('.jPaginatePrev').on('click', function () {
   var list = $('.pagination').find('li');
+
   $.each(list, function (position, element) {
     if ($(element).is('.active')) {
       $(list[position - 1]).trigger('click');
+      checkPagerPosition()
+
     }
   })
-  checkPagerPosition()
+
 });
+
 
 checkPagerPosition();

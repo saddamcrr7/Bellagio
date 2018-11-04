@@ -126,7 +126,7 @@ header {
   margin: 0 0 36px;
   min-height: 827px;
   position: relative;
-
+  padding-bottom: 40px;
   .search-title {
     height: 60px;
 
@@ -263,7 +263,8 @@ header {
     height: 40px;
     background-color: $white-color;
     overflow: hidden;
-
+    position: absolute;
+    bottom: 0;
     .pg_nav {
       .pagination {
         li {
