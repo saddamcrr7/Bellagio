@@ -10,9 +10,13 @@ header {
 
     ul li {
       color: $white-color;
-      font-size: 12px;
       font-weight: 600;
       line-height: 12px;
+      font-size: 10px;
+
+      @include breakpoint ($small) {
+        font-size: 12px;
+      }
 
       a {
         color: $white-color;
@@ -43,7 +47,15 @@ header {
 
     p {
       width: 100%;
-      letter-spacing: 1px;
+      letter-spacing: unset;
+
+      font-size: 10px;
+
+      @include breakpoint ($small) {
+        font-size: 14px;
+        letter-spacing: 1px;
+
+      }
     }
 
     form {
@@ -93,7 +105,7 @@ header {
       li {
         a {
           color: #163868;
-          font-size: 11px;
+          font-size: 12px;
           transition: all 0.3s;
 
           @include breakpoint($small) {
@@ -127,31 +139,30 @@ header {
   position: relative;
 
   .search-title {
-    height: 60px;
+    // height: 60px;
 
     h1 {
       font-weight: bold;
-      font-size: 11px;
       margin: 0;
-      width: 90%;
+      width: 78%;
       height: inherit;
-      line-height: 60px;
-      padding: 0 0 0 10px;
+      line-height: 40px;
+      padding: 0 0 0 7px;
       color: #2c2c2c;
       border-bottom: 1px solid #dfdfdf;
-
-      @include breakpoint($small) {
-        font-size: 14px;
-      }
+      display: none;
 
       @include breakpoint($medium) {
         font-size: 15px;
         padding: 0 0 0 20px;
+        display: block;
 
       }
 
       @include breakpoint($large) {
         font-size: 17px;
+        line-height: 60px;
+
       }
 
       @include breakpoint($x-large) {
@@ -162,41 +173,36 @@ header {
 
       span {
         font-weight: 400;
-        margin-left: 4px;
       }
     }
 
     #filterSlideToggleBtn {
-      width: 10%;
-      width: 162px;
+      width: 22%;
       border-left: 1px solid #dfdfdf;
       text-align: center;
       letter-spacing: 1px;
-      height: 60px;
-      line-height: 60px;
-      font-size: 11px;
+      line-height: 40px;
       cursor: pointer;
       color: #2c2c2c;
       font-weight: 500;
+      display: none;
 
       i {
-        margin-left: 12px;
-        font-size: 20px;
+        margin-left: 5px;
         color: $primary-color;
-      }
-
-      @include breakpoint($small) {
-        font-size: 13px;
       }
 
       @include breakpoint($medium) {
         font-size: 14px;
         padding: 0 0 0 20px;
+        display: block;
 
       }
 
       @include breakpoint($large) {
         font-size: 15px;
+        line-height: 60px;
+
       }
 
       @include breakpoint($x-large) {

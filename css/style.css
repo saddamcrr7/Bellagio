@@ -57,19 +57,19 @@ p {
   font-size: 11px;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   p {
     font-size: 12px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   p {
     font-size: 13px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   p {
     font-size: 14px;
   }
@@ -80,7 +80,7 @@ header .header_top {
   padding: 10px 0px;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   header .header_top {
     padding: 15px 5px;
   }
@@ -88,9 +88,15 @@ header .header_top {
 
 header .header_top ul li {
   color: #ffffff;
-  font-size: 12px;
   font-weight: 600;
   line-height: 12px;
+  font-size: 10px;
+}
+
+@media (min-width: 576px) {
+  header .header_top ul li {
+    font-size: 12px;
+  }
 }
 
 header .header_top ul li a, header .header_top ul li .footer_wrapper p, .footer_wrapper header .header_top ul li p, header .header_top ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header .header_top ul li input, header .header_top ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header .header_top ul li button {
@@ -123,7 +129,15 @@ header .header_bottom {
 
 header .header_bottom p {
   width: 100%;
-  letter-spacing: 1px;
+  letter-spacing: unset;
+  font-size: 10px;
+}
+
+@media (min-width: 576px) {
+  header .header_bottom p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }
 
 header .header_bottom form {
@@ -158,7 +172,7 @@ header .header_bottom form button:hover {
   color: #1f4c8c;
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   header .header_bottom p {
     width: 70%;
   }
@@ -173,31 +187,31 @@ header nav {
 
 header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
   color: #163868;
-  font-size: 11px;
+  font-size: 12px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 12px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 14px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 15px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 19px;
   }
@@ -211,42 +225,34 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   position: relative;
 }
 
-#diamondsearch .search-title {
-  height: 60px;
-}
-
 #diamondsearch .search-title h1 {
   font-weight: bold;
-  font-size: 11px;
   margin: 0;
-  width: 90%;
+  width: 78%;
   height: inherit;
-  line-height: 60px;
-  padding: 0 0 0 10px;
+  line-height: 40px;
+  padding: 0 0 0 7px;
   color: #2c2c2c;
   border-bottom: 1px solid #dfdfdf;
+  display: none;
 }
 
-@media (min-width: 36rem) {
-  #diamondsearch .search-title h1 {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   #diamondsearch .search-title h1 {
     font-size: 15px;
     padding: 0 0 0 20px;
+    display: block;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   #diamondsearch .search-title h1 {
     font-size: 17px;
+    line-height: 60px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   #diamondsearch .search-title h1 {
     font-size: 18px;
     padding: 0 0 0 24px;
@@ -255,49 +261,41 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
 
 #diamondsearch .search-title h1 span {
   font-weight: 400;
-  margin-left: 4px;
 }
 
 #diamondsearch .search-title #filterSlideToggleBtn {
-  width: 10%;
-  width: 162px;
+  width: 22%;
   border-left: 1px solid #dfdfdf;
   text-align: center;
   letter-spacing: 1px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 11px;
+  line-height: 40px;
   cursor: pointer;
   color: #2c2c2c;
   font-weight: 500;
+  display: none;
 }
 
 #diamondsearch .search-title #filterSlideToggleBtn i {
-  margin-left: 12px;
-  font-size: 20px;
+  margin-left: 5px;
   color: #1f4c8c;
 }
 
-@media (min-width: 36rem) {
-  #diamondsearch .search-title #filterSlideToggleBtn {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   #diamondsearch .search-title #filterSlideToggleBtn {
     font-size: 14px;
     padding: 0 0 0 20px;
+    display: block;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   #diamondsearch .search-title #filterSlideToggleBtn {
     font-size: 15px;
+    line-height: 60px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   #diamondsearch .search-title #filterSlideToggleBtn {
     font-size: 16px;
     padding: 0 0 0 24px;
@@ -333,25 +331,25 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   font-size: 10px;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   #diamondsearch .results_table .sort {
     font-size: 11px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   #diamondsearch .results_table .sort {
     font-size: 12px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   #diamondsearch .results_table .sort {
     font-size: 13px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   #diamondsearch .results_table .sort {
     font-size: 14px;
   }
@@ -427,25 +425,25 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   font-size: 10px;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   #diamondsearch .results_table tbody tr td {
     font-size: 11px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   #diamondsearch .results_table tbody tr td {
     font-size: 12px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   #diamondsearch .results_table tbody tr td {
     font-size: 13px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   #diamondsearch .results_table tbody tr td {
     font-size: 14px;
   }
@@ -558,25 +556,25 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   font-weight: 400;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   #followSection h2 {
     font-size: 20px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   #followSection h2 {
     font-size: 25px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   #followSection h2 {
     font-size: 30px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   #followSection h2 {
     font-size: 40px;
   }
@@ -591,25 +589,25 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   border: 1px solid #d9dadc;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   .footer_wrapper {
     padding: 20px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .footer_wrapper {
     padding: 30px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   .footer_wrapper {
     padding: 35px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   .footer_wrapper {
     padding: 40px;
   }
@@ -622,28 +620,28 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   margin-bottom: 10px;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   .footer_wrapper .title {
     font-size: 16px;
     margin-bottom: 15px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .footer_wrapper .title {
     font-size: 18px;
     margin-bottom: 20px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   .footer_wrapper .title {
     font-size: 20px;
     margin-bottom: 22px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   .footer_wrapper .title {
     font-size: 24px;
     margin-bottom: 25px;
@@ -657,28 +655,28 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   font-weight: 300;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 576px) {
   .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
     font-size: 13px;
     line-height: 15px;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
   .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
     font-size: 14px;
     line-height: 20px;
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 992px) {
   .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
     font-size: 15px;
     line-height: 25px;
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 1200px) {
   .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
     font-size: 19px;
     line-height: 30px;
