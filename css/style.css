@@ -45,8 +45,12 @@ img, svg {
   max-width: 100%;
 }
 
-a:hover {
+a:hover, .footer_wrapper p:hover, .footer_wrapper .right_content form input:hover, .footer_wrapper .right_content form button:hover {
   text-decoration: none;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 p {
@@ -89,7 +93,7 @@ header .header_top ul li {
   line-height: 12px;
 }
 
-header .header_top ul li a {
+header .header_top ul li a, header .header_top ul li .footer_wrapper p, .footer_wrapper header .header_top ul li p, header .header_top ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header .header_top ul li input, header .header_top ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header .header_top ul li button {
   color: #ffffff;
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
@@ -97,7 +101,7 @@ header .header_top ul li a {
   padding: 5px;
 }
 
-header .header_top ul li a:hover {
+header .header_top ul li a:hover, header .header_top ul li .footer_wrapper p:hover, .footer_wrapper header .header_top ul li p:hover, header .header_top ul li .footer_wrapper .right_content form input:hover, .footer_wrapper .right_content form header .header_top ul li input:hover, header .header_top ul li .footer_wrapper .right_content form button:hover, .footer_wrapper .right_content form header .header_top ul li button:hover {
   opacity: 0.8;
 }
 
@@ -167,7 +171,7 @@ header nav {
   padding: 10px 0;
 }
 
-header nav ul li a {
+header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
   color: #163868;
   font-size: 11px;
   -webkit-transition: all 0.3s;
@@ -176,25 +180,25 @@ header nav ul li a {
 }
 
 @media (min-width: 36rem) {
-  header nav ul li a {
+  header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 12px;
   }
 }
 
 @media (min-width: 48rem) {
-  header nav ul li a {
+  header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 14px;
   }
 }
 
 @media (min-width: 62rem) {
-  header nav ul li a {
+  header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 15px;
   }
 }
 
 @media (min-width: 75rem) {
-  header nav ul li a {
+  header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header nav ul li p, header nav ul li .footer_wrapper .right_content form input, .footer_wrapper .right_content form header nav ul li input, header nav ul li .footer_wrapper .right_content form button, .footer_wrapper .right_content form header nav ul li button {
     font-size: 19px;
   }
 }
@@ -203,10 +207,8 @@ header nav ul li a {
   background: #fff;
   border: 1px solid #e7e7e7;
   line-height: 1;
-  margin: 0 0 36px;
   min-height: 827px;
   position: relative;
-  padding-bottom: 40px;
 }
 
 #diamondsearch .search-title {
@@ -215,14 +217,40 @@ header nav ul li a {
 
 #diamondsearch .search-title h1 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 11px;
   margin: 0;
   width: 90%;
   height: inherit;
   line-height: 60px;
-  padding: 0 0 0 24px;
+  padding: 0 0 0 10px;
   color: #2c2c2c;
   border-bottom: 1px solid #dfdfdf;
+}
+
+@media (min-width: 36rem) {
+  #diamondsearch .search-title h1 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 48rem) {
+  #diamondsearch .search-title h1 {
+    font-size: 15px;
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (min-width: 62rem) {
+  #diamondsearch .search-title h1 {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 75rem) {
+  #diamondsearch .search-title h1 {
+    font-size: 18px;
+    padding: 0 0 0 24px;
+  }
 }
 
 #diamondsearch .search-title h1 span {
@@ -238,7 +266,7 @@ header nav ul li a {
   letter-spacing: 1px;
   height: 60px;
   line-height: 60px;
-  font-size: 16px;
+  font-size: 11px;
   cursor: pointer;
   color: #2c2c2c;
   font-weight: 500;
@@ -250,6 +278,37 @@ header nav ul li a {
   color: #1f4c8c;
 }
 
+@media (min-width: 36rem) {
+  #diamondsearch .search-title #filterSlideToggleBtn {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 48rem) {
+  #diamondsearch .search-title #filterSlideToggleBtn {
+    font-size: 14px;
+    padding: 0 0 0 20px;
+  }
+}
+
+@media (min-width: 62rem) {
+  #diamondsearch .search-title #filterSlideToggleBtn {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 75rem) {
+  #diamondsearch .search-title #filterSlideToggleBtn {
+    font-size: 16px;
+    padding: 0 0 0 24px;
+  }
+}
+
+#diamondsearch .search-title #filterSlideToggleBtn span {
+  font-weight: 400;
+  margin-left: 4px;
+}
+
 #diamondsearch .results_table {
   width: 100%;
   border-spacing: 0;
@@ -259,7 +318,6 @@ header nav ul li a {
 
 #diamondsearch .results_table .sort {
   text-transform: uppercase;
-  font-size: 12px;
   font-weight: normal;
   color: #2c2c2c;
   text-align: center;
@@ -272,6 +330,31 @@ header nav ul li a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-size: 10px;
+}
+
+@media (min-width: 36rem) {
+  #diamondsearch .results_table .sort {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 48rem) {
+  #diamondsearch .results_table .sort {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 62rem) {
+  #diamondsearch .results_table .sort {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 75rem) {
+  #diamondsearch .results_table .sort {
+    font-size: 14px;
+  }
 }
 
 #diamondsearch .results_table .sort span i {
@@ -336,12 +419,36 @@ header nav ul li a {
   height: 40px;
   width: 11.1111%;
   font-family: 'proxima_novaregular', Helvetica, Arial, sans-serif;
-  font-size: 14px;
   vertical-align: middle;
   color: #3a3a3a;
   -webkit-transition: color .25s;
   -o-transition: color .25s;
   transition: color .25s;
+  font-size: 10px;
+}
+
+@media (min-width: 36rem) {
+  #diamondsearch .results_table tbody tr td {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 48rem) {
+  #diamondsearch .results_table tbody tr td {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 62rem) {
+  #diamondsearch .results_table tbody tr td {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 75rem) {
+  #diamondsearch .results_table tbody tr td {
+    font-size: 14px;
+  }
 }
 
 #diamondsearch .results_table tbody tr:hover {
@@ -350,6 +457,30 @@ header nav ul li a {
 
 #diamondsearch .results_table tbody tr:hover td {
   color: #ffffff;
+}
+
+#diamondsearch .results_table td.lab,
+#diamondsearch .results_table th.lab_sort {
+  display: none;
+}
+
+@media (min-width: 415px) {
+  #diamondsearch .results_table td.lab,
+  #diamondsearch .results_table th.lab_sort {
+    display: table-cell;
+  }
+}
+
+#diamondsearch .results_table td.cut,
+#diamondsearch .results_table th.cut_short {
+  display: none;
+}
+
+@media (min-width: 388px) {
+  #diamondsearch .results_table td.cut,
+  #diamondsearch .results_table th.cut_short {
+    display: table-cell;
+  }
 }
 
 #diamondsearch .search_fotter {
@@ -364,7 +495,7 @@ header nav ul li a {
   bottom: 0;
 }
 
-#diamondsearch .search_fotter .pg_nav .pagination li a {
+#diamondsearch .search_fotter .pg_nav .pagination li a, #diamondsearch .search_fotter .pg_nav .pagination li .footer_wrapper p, .footer_wrapper #diamondsearch .search_fotter .pg_nav .pagination li p, #diamondsearch .search_fotter .pg_nav .pagination li .footer_wrapper .right_content form input, .footer_wrapper .right_content form #diamondsearch .search_fotter .pg_nav .pagination li input, #diamondsearch .search_fotter .pg_nav .pagination li .footer_wrapper .right_content form button, .footer_wrapper .right_content form #diamondsearch .search_fotter .pg_nav .pagination li button {
   display: inline-block;
   color: #3a3a3a;
   font-size: 14px;
@@ -375,7 +506,7 @@ header nav ul li a {
   line-height: 28px;
 }
 
-#diamondsearch .search_fotter .pg_nav .pagination li.active a {
+#diamondsearch .search_fotter .pg_nav .pagination li.active a, #diamondsearch .search_fotter .pg_nav .pagination li.active .footer_wrapper p, .footer_wrapper #diamondsearch .search_fotter .pg_nav .pagination li.active p, #diamondsearch .search_fotter .pg_nav .pagination li.active .footer_wrapper .right_content form input, .footer_wrapper .right_content form #diamondsearch .search_fotter .pg_nav .pagination li.active input, #diamondsearch .search_fotter .pg_nav .pagination li.active .footer_wrapper .right_content form button, .footer_wrapper .right_content form #diamondsearch .search_fotter .pg_nav .pagination li.active button {
   background-color: #f5f5f5;
 }
 
@@ -403,4 +534,186 @@ header nav ul li a {
 #diamondsearch .search_fotter .pg_nav .jPaginatePrev i {
   font-size: 20px;
   line-height: 28px;
+}
+
+#followSection {
+  width: 100%;
+  height: 74px;
+  margin: 20px 0;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background: #f5f5f5;
+  border: 1px solid #d9dadc;
+}
+
+#followSection a, #followSection .footer_wrapper p, .footer_wrapper #followSection p, #followSection .footer_wrapper .right_content form input, .footer_wrapper .right_content form #followSection input, #followSection .footer_wrapper .right_content form button, .footer_wrapper .right_content form #followSection button {
+  height: inherit;
+  color: #1f4c8c;
+}
+
+#followSection h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (min-width: 36rem) {
+  #followSection h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 48rem) {
+  #followSection h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 62rem) {
+  #followSection h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 75rem) {
+  #followSection h2 {
+    font-size: 40px;
+  }
+}
+
+#followSection:hover {
+  opacity: 1;
+}
+
+.footer_wrapper {
+  padding: 15px;
+  border: 1px solid #d9dadc;
+}
+
+@media (min-width: 36rem) {
+  .footer_wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer_wrapper {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 62rem) {
+  .footer_wrapper {
+    padding: 35px;
+  }
+}
+
+@media (min-width: 75rem) {
+  .footer_wrapper {
+    padding: 40px;
+  }
+}
+
+.footer_wrapper .title {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1f4c8c;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 36rem) {
+  .footer_wrapper .title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer_wrapper .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 62rem) {
+  .footer_wrapper .title {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 75rem) {
+  .footer_wrapper .title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
+  color: #a5afb3;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 300;
+}
+
+@media (min-width: 36rem) {
+  .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 62rem) {
+  .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 75rem) {
+  .footer_wrapper a, .footer_wrapper p, .footer_wrapper .right_content form input, .footer_wrapper .right_content form button {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+.footer_wrapper .right_content {
+  position: relative;
+}
+
+.footer_wrapper .right_content form input {
+  border: 1px solid #d9dadc;
+  padding-left: 10px;
+  width: 55%;
+}
+
+.footer_wrapper .right_content form button {
+  background-color: #a5afb3;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  width: 40%;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.footer_wrapper .right_content:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #d9dadc;
+  position: absolute;
+  left: -22%;
+  -webkit-transform: translateX(22%);
+  -ms-transform: translateX(22%);
+  transform: translateX(22%);
+  top: 0;
 }
