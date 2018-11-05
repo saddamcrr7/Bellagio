@@ -335,21 +335,16 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   position: absolute;
   cursor: pointer;
   top: -7px;
-  color: #3d328e;
+  color: #1f4c8c;
   outline: 0 none;
   border: 0 none;
   cursor: pointer;
   outline: none;
-}
-
-#diamondsearch #ds_filter .ui-slider .ui-slider-handle:last-child {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  width: 17px;
 }
 
 #diamondsearch #ds_filter .ui-slider .ui-slider-handle:last-child::after {
-  top: -8px !important;
+  content: "\f0d9";
 }
 
 #diamondsearch #ds_filter .ui-slider .ui-slider-handle::after {

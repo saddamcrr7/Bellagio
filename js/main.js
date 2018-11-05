@@ -78,11 +78,20 @@ $(function () {
 
   checkPagerPosition();
 
+   
+  $('#filterSlideToggleBtn').click(function () {
+    $('#ds_filter').toggle("slide", {
+      direction: "up"
+    }, 1000)
+  })
+
+
+
   $("#price_slider_range").slider({
     range: true,
     min: 0,
-    max: 500,
-    values: [0, 500],
+    max: 10000000,
+    values: [0, 10000000],
 
     slide: function (event, ui) {
       $("#amount_left").val("$" + ui.values[0]);
@@ -91,13 +100,26 @@ $(function () {
   });
 
   $("#amount_left").val(" $" + $("#price_slider_range").slider("values", 0));
-
   $("#amount_right").val(" $" + $("#price_slider_range").slider("values", 1));
 
-  $('#filterSlideToggleBtn').click(function () {
-    $('#ds_filter').toggle("slide", {
-      direction: "up"
-    }, 1000)
-  })
+
+  $("#carat_slider_range").slider({
+    range: true,
+    min: 0.00,
+    max: 30.00,
+    values: [0, 30.00],
+    step: 0.1,
+
+    slide: function (event, ui) {
+      $("#carat_amount_left").val("$" + ui.values[0]);
+      $("#carat_amount_right").val(" $" + $("#carat_slider_range").slider("values", 1));
+    }
+  });
+
+  $("#carat_amount_left").val(" $" + $("#carat_slider_range").slider("values", 0));
+  $("#carat_amount_right").val(" $" + $("#carat_slider_range").slider("values", 1));
+
+
+ 
 
 });

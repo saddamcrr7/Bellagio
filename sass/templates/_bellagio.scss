@@ -237,16 +237,15 @@ header {
         position: absolute;
         cursor: pointer;
         top: -7px;
-        color: #3d328e;
+        color:  $primary-color;
         outline: 0 none;
         border: 0 none;
         cursor: pointer;
         outline: none;
-
+        width: 17px;
         &:last-child {
-          transform: rotate(180deg);
           &::after{
-            top: -8px !important;
+            content: "\f0d9";
           }
         }
 
