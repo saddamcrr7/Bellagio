@@ -82,7 +82,7 @@ $(function () {
   $('#filterSlideToggleBtn').click(function () {
     $('#ds_filter').toggle("slide", {
       direction: "up"
-    }, 1000)
+    }, 500)
   })
 
 
@@ -119,7 +119,29 @@ $(function () {
   $("#carat_amount_left").val(" $" + $("#carat_slider_range").slider("values", 0));
   $("#carat_amount_right").val(" $" + $("#carat_slider_range").slider("values", 1));
 
+  $("#color_slider_range").slider({
+    range: true,
+    min: 0,
+    max: 10,
+    values: [0, 10],
+    step:1,
+  });
 
+  $("#cut_slider_range").slider({
+    range: true,
+    min: 0,
+    max: 4,
+    values: [0, 4],
+    step:1,
+  });
+
+  $("#symmetry_slider_range").slider({
+    range: true,
+    min: 0,
+    max: 4,
+    values: [0, 4],
+    step:1,
+  });
  
 
 });
