@@ -86,7 +86,7 @@
         <div class="filter_options">
           <div class="shape">
             <h6 class="option_title text-uppercase">Shape</h6>
-            <div class="shape_options d-flex justify-content-between align-items-center">
+            <div class="shape_options d-flex justify-content-between align-items-center mt-4">
               <div class="shape_s_option" data-shape="round"><img src="./images/RoundShape.png" alt="round"></div>
               <div class="shape_s_option" data-shape="princess"><img src="./images/princessShape.png" alt="princess"></div>
               <div class="shape_s_option" data-shape="emerald"><img src="./images/emeraldShape.png" alt="emerald"></div>
@@ -102,16 +102,16 @@
           <div class="row mt-3">
             <div class="col-md-6 pr-md-5">
 
-              <div class="price_option">
+              <div class="price_option mt-md-3">
                 <h6 class="option_title text-uppercase">price</h6>
                 <div id="price_slider_range"></div>
-                <p class="d-flex justify-content-around align-items-center mt-3">
+                <p class="d-flex justify-content-between px-4 align-items-center mt-3">
                   <input type="text" id="amount_left">
                   <input type="text" id="amount_right">
                 </p>
               </div>
 
-              <div class="color_option">
+              <div class="color_option mt-md-3">
                 <h6 class="option_title text-uppercase">Color</h6>
                 <div id="color_slider_range"></div>
                 <ul class="d-flex justify-content-around align-items-center mt-3 list-unstyled">
@@ -128,7 +128,7 @@
                 </ul>
               </div>
 
-              <div class="cut_option">
+              <div class="cut_option mt-md-3">
                 <h6 class="option_title text-uppercase">cut</h6>
                 <div id="cut_slider_range"></div>
                 <ul class="d-flex justify-content-around align-items-center mt-3 list-unstyled">
@@ -139,7 +139,7 @@
                 </ul>
               </div>
 
-              <div class="symmetry_option">
+              <div class="symmetry_option mt-md-3">
                 <h6 class="option_title text-uppercase">symmetry</h6>
                 <div id="symmetry_slider_range"></div>
                 <ul class="d-flex justify-content-around align-items-center mt-3 list-unstyled">
@@ -152,30 +152,18 @@
 
             </div>
             <div class="col-md-6 pl-md-5">
-              <div class="carat_option">
+              <div class="carat_option mt-md-3">
                 <h6 class="option_title text-uppercase">carat</h6>
                 <div id="carat_slider_range"></div>
-                <p class="d-flex justify-content-around align-items-center mt-3">
+                <p class="d-flex justify-content-between px-4 align-items-center mt-3">
                   <input type="text" id="carat_amount_left">
                   <input type="text" id="carat_amount_right">
                 </p>
               </div>
 
-              <div class="clarity_option">
+              <div class="clarity_option mt-md-3">
                   <h6 class="option_title text-uppercase">CLARITY</h6>
-                  <div id="clarity_slider_range">
-                    <ul class="dot list-unstyled d-flex justify-content-between align-items-center">
-                      <li class=""></li>
-                      <li class="mx-1"></li>
-                      <li class="mx-1"></li>
-                      <li class="mx-1"></li>
-                      <li class="mx-1"></li>
-                      <li class="mx-1"></li>
-                      <li class="mx-1"></li>
-                      <li class="mx-1"></li>
-                      <li class="mx"></li>
-                    </ul>
-                  </div>
+                  <div id="clarity_slider_range"></div>
                   
                   <ul class="d-flex justify-content-around align-items-center mt-3 list-unstyled">
                     <li>IF</li>
@@ -190,7 +178,7 @@
                   </ul>
                 </div>
 
-              <div class="polish_option">
+              <div class="polish_option mt-md-3">
                 <h6 class="option_title text-uppercase">polish</h6>
                 <div id="polish_slider_range"></div>
                 <ul class="d-flex justify-content-around align-items-center mt-3 list-unstyled">
@@ -199,6 +187,11 @@
                   <li>Good</li>
                   <li>Fair</li>
                 </ul>
+              </div>
+
+              <div class="search_op d-flex pt-4 justify-content-between align-items-center">
+                <button class="text-uppercase" id="reset_btn">Reset</button>
+                <button class="text-uppercase" id="search_btn">search</button>
               </div>
 
             </div>

@@ -1,5 +1,6 @@
 header {
   z-index: 10;
+
   .header_top {
     background: $primary-color;
     padding: 10px 0px;
@@ -220,7 +221,7 @@ header {
 
   #ds_filter {
     display: none;
-    height: 525px;
+    height: 550px;
     width: 100%;
     position: absolute;
     top: 60px;
@@ -229,34 +230,27 @@ header {
     background: $white-color;
     box-shadow: 0px 5px 10px rgba(165, 175, 179, 0.326);
     z-index: 2;
+
     .ui-slider {
       background: $dark-grey-color;
       height: 4px;
       border-radius: 10px;
-      margin: 0 17px;
-      .dot{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 30;
-        li{
-          height: 100%;
-          width: 2px;
-          background: rgb(228, 228, 228);
-        }
-      }
+      margin: 0 10px;
+      margin-top: 15px;
+
       .ui-slider-handle {
         position: absolute;
         cursor: pointer;
         top: -7px;
-        color:  $primary-color;
+        color: $primary-color;
         outline: 0 none;
         border: 0 none;
         cursor: pointer;
         outline: none;
         width: 17px;
+
         &:last-child {
-          &::after{
+          &::after {
             content: "\f0d9";
           }
         }
@@ -280,6 +274,77 @@ header {
         background: $primary-color;
       }
 
+    }
+
+    input {
+      outline: none;
+      border: 1px solid $dark-grey-color;
+      width: 22%;
+      padding: 0 8px;
+      color: #535353;
+    }
+
+    ul li,
+    p {
+      font-size: 14px;
+    }
+
+    .option_title {
+      font-size: 15px;
+    }
+
+    .search_op {
+      button {
+        width: 45%;
+        height: 45px;
+        color: $primary-color;
+        border: 1px solid $dark-grey-color;
+        outline: none;
+        background: transparent;
+        font-size: 19px;
+        cursor: pointer;
+        font-weight: 500;
+        letter-spacing: 1.75px;
+
+        &#search_btn {
+          color: $white-color;
+          background: $primary-color
+        }
+      }
+    }
+
+    .shape_options {
+      .shape_s_option {
+        position: relative;
+        cursor: pointer;
+        img{
+        transition: all 0.3s;
+
+        }
+        &::before {
+          content: '';
+          width: 90%;
+          height: 2px;
+          background: $dark-grey-color;
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+        transition: all 0.3s;
+
+        }
+
+        &.active {
+          img{
+          opacity: 0.7;
+
+          }
+          &::before {
+            background: $primary-color;
+
+          }
+        }
+      }
     }
 
 

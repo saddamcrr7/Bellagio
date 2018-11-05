@@ -313,7 +313,7 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
 
 #diamondsearch #ds_filter {
   display: none;
-  height: 525px;
+  height: 550px;
   width: 100%;
   position: absolute;
   top: 60px;
@@ -329,20 +329,8 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   background: #d9dadc;
   height: 4px;
   border-radius: 10px;
-  margin: 0 17px;
-}
-
-#diamondsearch #ds_filter .ui-slider .dot {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 30;
-}
-
-#diamondsearch #ds_filter .ui-slider .dot li {
-  height: 100%;
-  width: 2px;
-  background: #e4e4e4;
+  margin: 0 10px;
+  margin-top: 15px;
 }
 
 #diamondsearch #ds_filter .ui-slider .ui-slider-handle {
@@ -375,6 +363,76 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
 }
 
 #diamondsearch #ds_filter .ui-slider .ui-slider-range {
+  background: #1f4c8c;
+}
+
+#diamondsearch #ds_filter input {
+  outline: none;
+  border: 1px solid #d9dadc;
+  width: 22%;
+  padding: 0 8px;
+  color: #535353;
+}
+
+#diamondsearch #ds_filter ul li,
+#diamondsearch #ds_filter p {
+  font-size: 14px;
+}
+
+#diamondsearch #ds_filter .option_title {
+  font-size: 15px;
+}
+
+#diamondsearch #ds_filter .search_op button {
+  width: 45%;
+  height: 45px;
+  color: #1f4c8c;
+  border: 1px solid #d9dadc;
+  outline: none;
+  background: transparent;
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+}
+
+#diamondsearch #ds_filter .search_op button#search_btn {
+  color: #ffffff;
+  background: #1f4c8c;
+}
+
+#diamondsearch #ds_filter .shape_options .shape_s_option {
+  position: relative;
+  cursor: pointer;
+}
+
+#diamondsearch #ds_filter .shape_options .shape_s_option img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#diamondsearch #ds_filter .shape_options .shape_s_option::before {
+  content: '';
+  width: 90%;
+  height: 2px;
+  background: #d9dadc;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#diamondsearch #ds_filter .shape_options .shape_s_option.active img {
+  opacity: 0.7;
+}
+
+#diamondsearch #ds_filter .shape_options .shape_s_option.active::before {
   background: #1f4c8c;
 }
 

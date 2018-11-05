@@ -86,6 +86,11 @@ $(function () {
   })
 
 
+  $('.shape_options .shape_s_option').click(function(e){
+    $(this).toggleClass('active')
+    
+  })
+
 
   $("#price_slider_range").slider({
     range: true,
@@ -107,17 +112,17 @@ $(function () {
     range: true,
     min: 0.00,
     max: 30.00,
-    values: [0, 30.00],
+    values: [0.00, 30.00],
     step: 0.1,
 
     slide: function (event, ui) {
-      $("#carat_amount_left").val("$" + ui.values[0]);
-      $("#carat_amount_right").val(" $" + $("#carat_slider_range").slider("values", 1));
+      $("#carat_amount_left").val(ui.values[0]);
+      $("#carat_amount_right").val($("#carat_slider_range").slider("values", 1));
     }
   });
 
-  $("#carat_amount_left").val(" $" + $("#carat_slider_range").slider("values", 0));
-  $("#carat_amount_right").val(" $" + $("#carat_slider_range").slider("values", 1));
+  $("#carat_amount_left").val($("#carat_slider_range").slider("values", 0));
+  $("#carat_amount_right").val($("#carat_slider_range").slider("values", 1));
 
   $("#color_slider_range").slider({
     range: true,
