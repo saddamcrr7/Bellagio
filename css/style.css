@@ -664,6 +664,166 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   line-height: 28px;
 }
 
+#diamondsearch #diamond_preview {
+  background: none repeat scroll 0 0 #FFFFFF;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+  max-width: 822px;
+  width: 100%;
+  min-height: 336px;
+  margin: auto;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+#diamondsearch #diamond_preview #preview_close_btn {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  z-index: 1;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+#diamondsearch #diamond_preview #preview_close_btn:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_width,
+#diamondsearch #diamond_preview .left_side .diamond_length {
+  font-size: 11px;
+  position: relative;
+  max-width: 195px;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_width::before, #diamondsearch #diamond_preview .left_side .diamond_width:after,
+#diamondsearch #diamond_preview .left_side .diamond_length::before,
+#diamondsearch #diamond_preview .left_side .diamond_length:after {
+  content: '';
+  position: absolute;
+  background: #b3b3b3;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_width::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 10px;
+  width: 1px;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_width::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 10px;
+  width: 1px;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_length::before {
+  position: absolute;
+  left: -13px;
+  top: -725%;
+  height: 1px;
+  width: 10px;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_length::after {
+  position: absolute;
+  left: -13px;
+  bottom: 100%;
+  height: 1px;
+  width: 10px;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_img {
+  background: #1f4c8c;
+  position: relative;
+  max-width: 195px;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_img::before {
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  background: #b3b3b3;
+}
+
+#diamondsearch #diamond_preview .left_side .diamond_img:after {
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  bottom: 0;
+  background: #b3b3b3;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_title {
+  font-size: 18px;
+  letter-spacing: 1.75px;
+  font-weight: 500;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_subtitle {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_price {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_preview_actions {
+  width: 200px;
+  height: 45px;
+  border: 1px solid #1f4c8c;
+  text-align: center;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_preview_actions a, #diamondsearch #diamond_preview .right_side .diamond_preview_actions .footer_wrapper p, .footer_wrapper #diamondsearch #diamond_preview .right_side .diamond_preview_actions p, #diamondsearch #diamond_preview .right_side .diamond_preview_actions .footer_wrapper .right_content form input, .footer_wrapper .right_content form #diamondsearch #diamond_preview .right_side .diamond_preview_actions input, #diamondsearch #diamond_preview .right_side .diamond_preview_actions .footer_wrapper .right_content form button, .footer_wrapper .right_content form #diamondsearch #diamond_preview .right_side .diamond_preview_actions button {
+  display: block;
+  height: inherit;
+  color: #1f4c8c;
+  font-size: 16px;
+  line-height: 41px;
+  letter-spacing: 1.75px;
+  font-weight: 500;
+  background: transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_preview_actions a:hover, #diamondsearch #diamond_preview .right_side .diamond_preview_actions .footer_wrapper p:hover, .footer_wrapper #diamondsearch #diamond_preview .right_side .diamond_preview_actions p:hover, #diamondsearch #diamond_preview .right_side .diamond_preview_actions .footer_wrapper .right_content form input:hover, .footer_wrapper .right_content form #diamondsearch #diamond_preview .right_side .diamond_preview_actions input:hover, #diamondsearch #diamond_preview .right_side .diamond_preview_actions .footer_wrapper .right_content form button:hover, .footer_wrapper .right_content form #diamondsearch #diamond_preview .right_side .diamond_preview_actions button:hover {
+  color: #FFFFFF;
+  background: #1f4c8c;
+}
+
+#diamondsearch #diamond_preview .right_side .diamond_about {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
 #followSection {
   width: 100%;
   height: 74px;
@@ -845,3 +1005,5 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   transform: translateX(22%);
   top: 0;
 }
+
+/*# sourceMappingURL=style.css.map */

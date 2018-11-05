@@ -317,10 +317,12 @@ header {
       .shape_s_option {
         position: relative;
         cursor: pointer;
-        img{
-        transition: all 0.3s;
+
+        img {
+          transition: all 0.3s;
 
         }
+
         &::before {
           content: '';
           width: 90%;
@@ -330,15 +332,16 @@ header {
           top: -5px;
           left: 50%;
           transform: translateX(-50%);
-        transition: all 0.3s;
+          transition: all 0.3s;
 
         }
 
         &.active {
-          img{
-          opacity: 0.7;
+          img {
+            opacity: 0.7;
 
           }
+
           &::before {
             background: $primary-color;
 
@@ -546,6 +549,159 @@ header {
       .jPaginatePrev i {
         font-size: 20px;
         line-height: 28px;
+      }
+    }
+  }
+
+  #diamond_preview {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    max-width: 822px;
+    width: 100%;
+    min-height: 336px;
+    margin: auto;
+    transition: all .25s;
+
+    #preview_close_btn {
+      top: 20px;
+      right: 20px;
+      position: absolute;
+      cursor: pointer;
+      padding: 5px;
+      font-size: 20px;
+      z-index: 1;
+      transition: all .25s;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    .left_side {
+
+      .diamond_width,
+      .diamond_length {
+        font-size: 11px;
+        position: relative;
+        max-width: 195px;
+        &::before,
+        &:after {
+          content: '';
+          position: absolute;
+          background: #b3b3b3;
+        }
+      }
+
+      .diamond_width::before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 10px;
+        width: 1px;
+      }
+
+      .diamond_width::after {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 10px;
+        width: 1px;
+      }
+
+      .diamond_length::before {
+        position: absolute;
+        left: -13px;
+        top: -725%;
+        height: 1px;
+        width: 10px;
+      }
+
+      .diamond_length::after {
+        position: absolute;
+        left: -13px;
+        bottom: 100%;
+        height: 1px;
+        width: 10px;
+      }
+
+      .diamond_img {
+        background: $primary-color;
+        position: relative;
+        max-width: 195px;
+        &::before {
+          content: '';
+          height: 1px;
+          position: absolute;
+          top: -8px;
+          left: 0;
+          right: 0;
+          background: #b3b3b3;
+        }
+
+        &:after {
+          content: '';
+          width: 1px;
+          position: absolute;
+          top: 0;
+          left: -8px;
+          bottom: 0;
+          background: #b3b3b3;
+        }
+      }
+    }
+
+    .right_side {
+      .diamond_title {
+        font-size: 18px;
+        letter-spacing: 1.75px;
+        font-weight: 500;
+      }
+
+      .diamond_subtitle {
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .diamond_price {
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+      }
+
+      .diamond_preview_actions {
+        width: 200px;
+        height: 45px;
+        border: 1px solid $primary-color;
+        text-align: center;
+
+        a {
+          display: block;
+          height: inherit;
+          color: $primary-color;
+          font-size: 16px;
+          line-height: 41px;
+          letter-spacing: 1.75px;
+          font-weight: 500;
+          background: transparent;
+          transition: all 0.3s;
+
+          &:hover {
+            color: #FFFFFF;
+            background: $primary-color;
+          }
+        }
+
+      }
+
+      .diamond_about {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 1px;
       }
     }
   }

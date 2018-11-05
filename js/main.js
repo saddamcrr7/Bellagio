@@ -1,7 +1,7 @@
 $(function () {
   var options = {
     valueNames: ['shape', 'carat', 'color', 'clarity', 'cut', 'polish', 'symmetry', 'lab', 'price'],
-    page: 20,
+    page: 18,
     pagination: {
       innerWindow: 1,
       left: 0,
@@ -32,7 +32,7 @@ $(function () {
 
 
   $('.jPaginateFirst').on('click', function () {
-    resultList.show(1, 20);
+    resultList.show(1, 18);
     checkPagerPosition();
   })
 
@@ -40,9 +40,9 @@ $(function () {
   $('.jPaginateLast').on('click', function () {
     var total = resultList.size(),
 
-      page = (total % 20) || 20,
+      page = (total % 18) || 18,
       start = total - page + 1;
-    resultList.show(start, 20);
+    resultList.show(start, 18);
 
     checkPagerPosition();
   })
