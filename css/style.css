@@ -75,6 +75,10 @@ p {
   }
 }
 
+header {
+  z-index: 10;
+}
+
 header .header_top {
   background: #1f4c8c;
   padding: 10px 0px;
@@ -307,6 +311,64 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   margin-left: 4px;
 }
 
+#diamondsearch #ds_filter {
+  display: none;
+  height: 525px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 20px 35px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px rgba(165, 175, 179, 0.326);
+  box-shadow: 0px 5px 10px rgba(165, 175, 179, 0.326);
+  z-index: 2;
+}
+
+#diamondsearch #ds_filter .ui-slider {
+  background: #d9dadc;
+  height: 4px;
+  border-radius: 10px;
+}
+
+#diamondsearch #ds_filter .ui-slider .ui-slider-handle {
+  position: absolute;
+  cursor: pointer;
+  top: -7px;
+  color: #3d328e;
+  outline: 0 none;
+  border: 0 none;
+  cursor: pointer;
+  outline: none;
+}
+
+#diamondsearch #ds_filter .ui-slider .ui-slider-handle:last-child {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#diamondsearch #ds_filter .ui-slider .ui-slider-handle:last-child::after {
+  top: -8px !important;
+}
+
+#diamondsearch #ds_filter .ui-slider .ui-slider-handle::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0da";
+  font-size: 32px;
+  position: absolute;
+  top: -7px;
+}
+
+#diamondsearch #ds_filter .ui-slider .ui-slider-range {
+  background: #1f4c8c;
+}
+
 #diamondsearch .results_table {
   width: 100%;
   border-spacing: 0;
@@ -329,6 +391,7 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   -ms-user-select: none;
   user-select: none;
   font-size: 10px;
+  z-index: 10;
 }
 
 @media (min-width: 576px) {
