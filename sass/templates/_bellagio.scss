@@ -233,6 +233,18 @@ header {
       background: $dark-grey-color;
       height: 4px;
       border-radius: 10px;
+      margin: 0 17px;
+      .dot{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 30;
+        li{
+          height: 100%;
+          width: 2px;
+          background: rgb(228, 228, 228);
+        }
+      }
       .ui-slider-handle {
         position: absolute;
         cursor: pointer;

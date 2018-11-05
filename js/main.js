@@ -132,7 +132,6 @@ $(function () {
     min: 0,
     max: 4,
     values: [0, 4],
-    step:1,
   });
 
   $("#symmetry_slider_range").slider({
@@ -140,7 +139,20 @@ $(function () {
     min: 0,
     max: 4,
     values: [0, 4],
-    step:1,
+  });
+
+  $("#polish_slider_range").slider({
+    range: true,
+    min: 0,
+    max: 4,
+    values: [0, 4],
+  });
+
+  $("#clarity_slider_range").slider({
+    range: true,
+    min: 0,
+    max: 10,
+    values: [0, 10],
   });
  
 
