@@ -174,6 +174,7 @@ $(function () {
     },
     click: function () {
       $("#diamond_preview ").fadeIn(200);
+      $(".list tr").removeClass('active')
       $(this).toggleClass('active')
     },
   })
