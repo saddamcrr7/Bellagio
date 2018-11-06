@@ -436,6 +436,14 @@ header {
         cursor: default;
         transition: background-color .25s;
 
+        &.active{
+          background-color: $primary-color !important;
+
+          td {
+            color: $white-color !important;
+          }
+        }
+
         &:nth-child(2n) {
           background-color: $grey-color;
         }
@@ -473,6 +481,7 @@ header {
           td {
             color: $white-color;
           }
+      
         }
       }
     }
@@ -564,8 +573,7 @@ header {
     width: 100%;
     min-height: 336px;
     margin: auto;
-    transition: all .25s;
-
+    display: none;
     #preview_close_btn {
       top: 20px;
       right: 20px;

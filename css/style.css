@@ -538,6 +538,14 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   transition: background-color .25s;
 }
 
+#diamondsearch .results_table tbody tr.active {
+  background-color: #1f4c8c !important;
+}
+
+#diamondsearch .results_table tbody tr.active td {
+  color: #ffffff !important;
+}
+
 #diamondsearch .results_table tbody tr:nth-child(2n) {
   background-color: #f5f5f5;
 }
@@ -678,9 +686,7 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   width: 100%;
   min-height: 336px;
   margin: auto;
-  -webkit-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
+  display: none;
 }
 
 #diamondsearch #diamond_preview #preview_close_btn {
