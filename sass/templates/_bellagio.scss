@@ -810,7 +810,10 @@ header {
     font-size: 11px;
     line-height: 15px;
     font-weight: 300;
-
+    transition: all 0.3s;
+    &:hover{
+      color: #353535
+    }
     @include breakpoint($small) {
       font-size: 13px;
       line-height: 15px;
@@ -838,7 +841,20 @@ header {
 
   .right_content {
     position: relative;
-
+    .follow_link{
+      a.fb{
+      position: relative;
+        &::before{
+          content: '';
+          height: 100%;
+          width: 1px;
+          background: $dark-grey-color;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
     form {
       input {
         border: 1px solid $dark-grey-color;

@@ -949,6 +949,13 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   font-size: 11px;
   line-height: 15px;
   font-weight: 300;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer_wrapper a:hover, .footer_wrapper p:hover, .footer_wrapper .right_content form input:hover, .footer_wrapper .right_content form button:hover {
+  color: #353535;
 }
 
 @media (min-width: 576px) {
@@ -981,6 +988,20 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
 
 .footer_wrapper .right_content {
   position: relative;
+}
+
+.footer_wrapper .right_content .follow_link a.fb, .footer_wrapper .right_content .follow_link p.fb, .footer_wrapper .right_content .follow_link form input.fb, .footer_wrapper .right_content form .follow_link input.fb, .footer_wrapper .right_content .follow_link form button.fb, .footer_wrapper .right_content form .follow_link button.fb {
+  position: relative;
+}
+
+.footer_wrapper .right_content .follow_link a.fb::before, .footer_wrapper .right_content .follow_link p.fb::before, .footer_wrapper .right_content .follow_link form input.fb::before, .footer_wrapper .right_content form .follow_link input.fb::before, .footer_wrapper .right_content .follow_link form button.fb::before, .footer_wrapper .right_content form .follow_link button.fb::before {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: #d9dadc;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer_wrapper .right_content form input {
