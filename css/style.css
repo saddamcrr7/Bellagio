@@ -234,18 +234,18 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   margin: 0;
   width: 78%;
   height: inherit;
-  line-height: 40px;
+  line-height: 20px;
   padding: 0 0 0 7px;
   color: #2c2c2c;
   border-bottom: 1px solid #dfdfdf;
-  display: none;
+  font-size: 11px;
 }
 
 @media (min-width: 768px) {
   #diamondsearch .search-title h1 {
     font-size: 15px;
     padding: 0 0 0 20px;
-    display: block;
+    line-height: 40px;
   }
 }
 
@@ -272,11 +272,10 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   border-left: 1px solid #dfdfdf;
   text-align: center;
   letter-spacing: 1px;
-  line-height: 40px;
+  line-height: 20px;
   cursor: pointer;
   color: #2c2c2c;
   font-weight: 500;
-  display: none;
 }
 
 #diamondsearch .search-title #filterSlideToggleBtn i {
@@ -288,7 +287,7 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   #diamondsearch .search-title #filterSlideToggleBtn {
     font-size: 14px;
     padding: 0 0 0 20px;
-    display: block;
+    line-height: 40px;
   }
 }
 
@@ -313,16 +312,22 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
 
 #diamondsearch #ds_filter {
   display: none;
-  height: 550px;
+  min-height: 550px;
   width: 100%;
   position: absolute;
-  top: 60px;
+  top: 20px;
   left: 0;
   padding: 20px 35px;
   background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px rgba(165, 175, 179, 0.326);
   box-shadow: 0px 5px 10px rgba(165, 175, 179, 0.326);
   z-index: 2;
+}
+
+@media (min-width: 768px) {
+  #diamondsearch #ds_filter {
+    top: 60px;
+  }
 }
 
 #diamondsearch #ds_filter .ui-slider {
