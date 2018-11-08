@@ -48,6 +48,11 @@ $.getJSON(url, function(data) {
     lab.classList.add('lab')
     lab.innerHTML = item.Lab
 
+    var height = document.createElement('td')
+    height.classList.add('height')
+    height.classList.add('d-none')
+    height.innerHTML = item.Crown_Height
+
     var price = document.createElement('td')
     price.classList.add('price')
     if (item.Buy_Price != null) {
@@ -58,12 +63,13 @@ $.getJSON(url, function(data) {
       price.innerHTML = `unknown`
     }
 
-    HTMLPusher(tableRow, [shape, carat, color, clarity, cut, polish, symmetry, lab, price])
+    HTMLPusher(tableRow, [shape, carat, color, clarity, cut, polish, symmetry, lab, price, height])
     root.append(tableRow)
 
   });
 
   list()
+  diamondPreview()
 
 })
   
@@ -168,6 +174,72 @@ function diamondPreview() {
       $("#diamond_preview ").fadeIn(200);
       $(".list tr").removeClass('active')
       $(this).toggleClass('active')
+
+      var pr = $("#diamond_preview ")
+
+      var price = pr.find('.diamond_price')
+      price.text($(this).find('.price').text())
+
+      var carat = pr.find('.diamond_carat')
+      carat.text($(this).find('.carat').text() + '-CARAT')
+
+      var shape = pr.find('.diamond_shape')
+      shape.text($(this).find('.shape').text() + ' DIAMOND')
+
+      var lab = pr.find('.diamond_subtitle')
+      lab.text('GRADED BY ' + $(this).find('.lab').text())
+
+      var width = pr.find('.diamond_width')
+      width.text('WIDTH ' + $(this).find('.carat').text() + ' MM')
+
+      var length = pr.find('.diamond_length')
+      if ($(this).find('.height').text() ) {
+        length.text('LENGTH ' + $(this).find('.height').text() + ' MM')
+      }else{
+        length.text('LENGTH 0.42 MM')
+      }
+
+      var about = pr.find('.diamond_about')
+      about.text( `The ${$(this).find('.carat').text()} carat ${$(this).find('.shape').text()} has ${$(this).find('.color').text()} color, ${$(this).find('.clarity').text()} clarity and has adiamond grading report from ${$(this).find('.lab').text()}.`)
+
+      var p_img = pr.find('.diamond_img img')
+      
+      var spT = $(this).find('.shape').text().toUpperCase()
+
+      
+      if (spT == 'ASSCHER') {
+        p_img.attr('src', `./images/asscher@2x.png`) 
+      }
+      else if (spT == 'ROUND') {
+        p_img.attr('src', `./images/round@2x.png`) 
+      }
+      else if (spT == 'PRINCESS') {
+        p_img.attr('src', `./images/princess@2x.png`) 
+      }
+      else if (spT == 'OVAL') {
+        p_img.attr('src', `./images/oval@2x.png`) 
+      }
+      else if (spT == 'CUSHION BRILLIANT') {
+        p_img.attr('src', `./images/cushion-modified@2x.png`) 
+      }
+      else if (spT == 'CUSHION') {
+        p_img.attr('src', `./images/cushion-modified@2x.png`) 
+      }
+      else if (spT == 'PEAR') {
+        p_img.attr('src', `./images/pear@2x.png`) 
+      }
+      else if (spT == 'RADIANT') {
+        p_img.attr('src', `./images/radiant@2x.png`) 
+      }
+      else if (spT == 'MARQUISE') {
+        p_img.attr('src', `./images/marquise@2x.png`) 
+      }
+      else if (spT == 'EMERALD') {
+        p_img.attr('src', `./images/emerald@2x.png`) 
+      }else{
+        p_img.attr('src', `Image src can't find`) 
+      }
+      
     },
   })
   $("#preview_close_btn").click(function () {

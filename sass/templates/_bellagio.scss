@@ -453,6 +453,7 @@ header {
 
           td {
             color: $white-color !important;
+            
           }
         }
 
@@ -469,6 +470,7 @@ header {
           color: #3a3a3a;
           transition: color .25s;
           font-size: 10px;
+          text-transform: uppercase;
 
           @include breakpoint($small) {
             font-size: 11px;
@@ -652,6 +654,12 @@ header {
         background: $primary-color;
         position: relative;
         max-width: 195px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          max-height: 50%;
+        }
         &::before {
           content: '';
           height: 1px;
