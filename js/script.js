@@ -13,6 +13,8 @@ $.getJSON(url, function(data) {
     children.remove(children)
   }
 
+  $('.search-title h1 span').text(`Showing ${items.length} diamonds`)
+
   items.forEach(item => {
     let tableRow = document.createElement('tr')
 
@@ -333,6 +335,18 @@ $("#clarity_slider_range").slider({
 
 $('#filterSlideToggleBtn').click(function () {
   $(this).toggleClass('active')
+  $('#ds_filter').toggle("slide", {
+    direction: "up"
+  }, 500)
+})
+$('#reset_btn').click(function () {
+  $('#filterSlideToggleBtn').toggleClass('active')
+  $('#ds_filter').toggle("slide", {
+    direction: "up"
+  }, 500)
+})
+$('#search_btn').click(function () {
+  $('#filterSlideToggleBtn').toggleClass('active')
   $('#ds_filter').toggle("slide", {
     direction: "up"
   }, 500)
