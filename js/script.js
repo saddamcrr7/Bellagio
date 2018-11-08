@@ -249,6 +249,10 @@ function diamondPreview() {
 
 diamondPreview()
 
+$('.results_table thead').mouseleave(function () {
+  diamondPreview()
+})
+
 $('.search_fotter').mouseleave(function () {
   diamondPreview()
 })
