@@ -189,6 +189,15 @@ header {
         color: $primary-color;
       }
 
+      &.active{
+        .fa-caret-down {
+          display: none !important;
+        }
+        .fa-times{
+          display: block !important;
+        }
+      }
+
       @include breakpoint($medium) {
         font-size: 14px;
         padding: 0 0 0 20px;

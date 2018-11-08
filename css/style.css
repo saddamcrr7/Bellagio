@@ -283,6 +283,14 @@ header nav ul li a, header nav ul li .footer_wrapper p, .footer_wrapper header n
   color: #1f4c8c;
 }
 
+#diamondsearch .search-title #filterSlideToggleBtn.active .fa-caret-down {
+  display: none !important;
+}
+
+#diamondsearch .search-title #filterSlideToggleBtn.active .fa-times {
+  display: block !important;
+}
+
 @media (min-width: 768px) {
   #diamondsearch .search-title #filterSlideToggleBtn {
     font-size: 14px;
